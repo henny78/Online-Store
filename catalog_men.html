@@ -2,71 +2,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Men's Catalog - Hennessy Store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Navbar (same as homepage) -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Hennessy Store</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Catalog</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="catalog_men.html">Men</a></li>
-            <li><a class="dropdown-item" href="catalog_women.html">Women</a></li>
-            <li><a class="dropdown-item" href="catalog_accessories.html">Accessories</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Catalog Section -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Men's Catalog</h2>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <!-- Card 1 -->
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/Untitled-design-2.webp" class="card-img-top img-fluid" alt="Men's Jacket">
-        <div class="card-body">
-          <h5 class="card-title">Men's Jacket</h5>
-          <p class="card-text">Stylish and trendy outerwear for all seasons.</p>
-          <a href="#" class="btn btn-primary">Buy Now</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Online Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/Untitled-design-6.webp" class="card-img-top img-fluid" alt="Men's Shirt">
-        <div class="card-body">
-          <h5 class="card-title">Men's Shirt</h5>
-          <p class="card-text">Casual and formal options available.</p>
-          <a href="#" class="btn btn-primary">Buy Now</a>
+    </nav>
+
+    <!-- CATALOG SECTION -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Men's Catalog</h2>
+        <div class="row g-4">
+            <!-- Example Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men-jacket.webp" class="card-img-top" alt="Men's Jacket">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Jacket</h5>
+                        <p class="card-text">$69.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men-shirt.webp" class="card-img-top" alt="Men's Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Casual Shirt</h5>
+                        <p class="card-text">$39.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men-pants.webp" class="card-img-top" alt="Men's Pants">
+                    <div class="card-body">
+                        <h5 class="card-title">Slim Fit Pants</h5>
+                        <p class="card-text">$49.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-light text-center py-3 mt-5">
-  &copy; 2025 Hennessy Store. All Rights Reserved.
-</footer>
+    <!-- FOOTER -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Henessey Villa | All Rights Reserved</p>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
