@@ -3,68 +3,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Online Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Online Store</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Online Store</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button" data-bs-toggle="dropdown">
-                            Catalog
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="catalogDropdown">
-                            <li><a class="dropdown-item" href="men.html">Men</a></li>
-                            <li><a class="dropdown-item" href="women.html">Women</a></li>
-                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Contact Form Section -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Contact Us</h2>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">My Online Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catalog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="men.html">Men</a></li>
+            <li><a class="dropdown-item" href="women.html">Women</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p>&copy; 2025 Online Store | Terms of Use | Privacy Policy</p>
-    </footer>
+<!-- Contact Form -->
+<div class="container mt-5 mb-5">
+  <h2 class="mb-4 text-center">Contact Us</h2>
+  <p class="text-center">Have questions or need help? Fill out the form below and we'll get back to you shortly.</p>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form>
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <!-- Subject -->
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+        </div>
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-5">
+  <div class="text-center p-3">
+    © 2025 Henessey Villa | Terms of Use | Privacy Policy
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
