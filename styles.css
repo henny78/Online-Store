@@ -1,2 +1,17 @@
 /* DEVELOPER: Henessey Villa, IS117-xxx, Fall 2025 */
-body { background-color:#f6f6f6; }
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    object-fit: cover;
+    height: 300px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
