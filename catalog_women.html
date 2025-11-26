@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - My Online Store</title>
+  <title>Women's Catalog - My Online Store</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -19,53 +19,73 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catalog</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Catalog</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="men.html">Men</a></li>
-            <li><a class="dropdown-item" href="women.html">Women</a></li>
+            <li><a class="dropdown-item active" href="women.html">Women</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Contact Form -->
-<div class="container mt-4">
-  <h2 class="mb-4">Contact Us</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+<!-- Women's Catalog -->
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Women's Catalog</h2>
+  <div class="row justify-content-center">
+
+    <!-- Example Women's Item 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/trending2.webp" class="card-img-top" alt="Women's Jacket">
+        <div class="card-body text-center">
+          <h5 class="card-title">Women's Jacket</h5>
+          <p class="card-text">$59.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+
+    <!-- Example Women's Item 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/trending3.webp" class="card-img-top" alt="Women's Dress">
+        <div class="card-body text-center">
+          <h5 class="card-title">Women's Dress</h5>
+          <p class="card-text">$39.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="subject" class="form-label">Subject</label>
-      <input type="text" class="form-control" id="subject" placeholder="Subject of your message">
+
+    <!-- Example Women's Item 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/trending8.webp" class="card-img-top" alt="Women's Pants">
+        <div class="card-body text-center">
+          <h5 class="card-title">Women's Pants</h5>
+          <p class="card-text">$34.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+
+  </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-light text-center text-lg-start mt-4">
+<footer class="bg-light text-center text-lg-start mt-5">
   <div class="text-center p-3">
     © 2025 Henessey Villa | Terms of Use | Privacy Policy
   </div>
 </footer>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
